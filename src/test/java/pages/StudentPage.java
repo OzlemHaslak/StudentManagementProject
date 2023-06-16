@@ -19,11 +19,11 @@ import java.util.List;
 
 
 
-public class RegistrationPage {
-    public RegistrationPage() {
+
+public class StudentPage {
+    public StudentPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
 
 
 
