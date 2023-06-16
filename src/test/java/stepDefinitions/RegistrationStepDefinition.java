@@ -1,2 +1,4 @@
-package stepDefinitions;public class RegistrationStepDefinition {
+package stepDefinitions;
+
+public class RegistrationStepDefinition {
 }
