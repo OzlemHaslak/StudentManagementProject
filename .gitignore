@@ -1,4 +1,4 @@
 /.idea/
 /target/
-/src/test/resources/htmlReport/
-
+/src/test/resources/htmlRep/ort/
+src/test/resources/cucumber.properties/
