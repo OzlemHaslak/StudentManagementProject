@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-import java.util.List;
+
 
 
 
@@ -598,18 +598,45 @@ public class ViceDeanPage {
 
 
 
+//Samet Ozdemir
+@FindBy(xpath = "//a[@href='/login']")
+public WebElement loginIcon;
 
+@FindBy(id = "username")
+public WebElement username;
 
+@FindBy(id = "password")
+public WebElement password;
 
+@FindBy(xpath = "//button[.='Login']")
+public WebElement loginButton;
 
+@FindBy(id = "controlled-tab-example-tab-lessonProgram")
+public WebElement lessonProgram;
 
+@FindBy(xpath = "//*[@id='react-select-2-input']")
+public WebElement chooseLessons;
 
+@FindBy(id = "educationTermId")
+public WebElement chooseEducationTerm;
 
+@FindBy(id = "day")
+public WebElement chooseDay;
 
+@FindBy(id = "startTime")
+public WebElement startTime;
 
+@FindBy(id = "stopTime")
+public WebElement stopTime;
 
+@FindBy(xpath = "(//button[.='Submit'])[3]")
+public WebElement submitButton;
 
+@FindBy(xpath = "//*[.='Created Lesson Program']")
+public WebElement successAlert;
 
+@FindBy(xpath = "//*[.='You have entered an invalid value. Valid values are: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY']")
+public WebElement failAlert;
 
 
 
@@ -670,34 +697,7 @@ public class ViceDeanPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Samet Ozdemir
 
 
 

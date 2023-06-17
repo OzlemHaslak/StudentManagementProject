@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.Select;
 import pages.ViceDeanPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -10,8 +12,6 @@ import org.openqa.selenium.Keys;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
-
 
 
 
@@ -598,7 +598,69 @@ public class ViceDeanStepDefinition {
 
 
 
+    //Samet Ozdemir
+@Given("{string} sayfasina git")
+public void sayfasina_git(String url) {
+    Driver.getDriver().get(url);
+}
+    @When("login sekmesine tikla")
+    public void login_sekmesine_tikla() {
+        viceDeanPage = new ViceDeanPage();
+        viceDeanPage.loginIcon.click();
+    }
+    @When("username alanini doldur")
+    public void username_alanini_doldur() {
+        viceDeanPage.username.sendKeys(ConfigReader.getProperty("username"));
+    }
+    @When("password alanini doldur")
+    public void password_alanini_doldur() {
+        viceDeanPage.password.sendKeys(ConfigReader.getProperty("password"));
+    }
+    @When("login butonuna tikla")
+    public void login_butonuna_tikla() {
+        viceDeanPage.loginButton.click();
+    }
+    @When("Lesson Program sekmesine tikla")
+    public void kullanici_lesson_program_sekmesine_tikla() {
+        viceDeanPage.lessonProgram.click();
+    }
+    @When("{string} dersini sec")
+    public void dersini_sec(String lesson) {
+        viceDeanPage.chooseLessons.sendKeys(lesson+Keys.ENTER);
+    }
+    @When("{string} egitim donemini sec")
+    public void egitim_donemini_sec(String chooseTerm) {
+        Select educationTerm = new Select(viceDeanPage.chooseEducationTerm);
+        educationTerm.selectByVisibleText(chooseTerm);
+    }
 
+    @When("ders gununu {string} sec")
+    public void ders_gununu_sec(String chooseDay) {
+        Select day = new Select(viceDeanPage.chooseDay);
+        day.selectByVisibleText(chooseDay);
+    }
+    @When("ders icin baslama saatini {string} olarak sec")
+    public void ders_icin_baslama_saatini_olarak_sec(String startTime) {
+        viceDeanPage.startTime.sendKeys(startTime);
+    }
+    @When("ders icin bitis saatini {string} olarak sec")
+    public void ders_icin_bitis_saatini_olarak_sec(String stopTime) {
+        viceDeanPage.stopTime.sendKeys(stopTime);
+    }
+    @When("submit butonuna tikla")
+    public void submit_butonuna_tikla() {
+        viceDeanPage.submitButton.click();
+    }
+    @Then("ders programının eklendigini dogrula")
+    public void ders_programının_eklendigini_dogrula() {
+        System.out.println("Alert Message: "+viceDeanPage.successAlert.getText());
+        Assert.assertTrue(viceDeanPage.successAlert.isDisplayed());
+        ReusableMethods.bekle(2);
+    }
+    @Then("sayfayi kapat")
+    public void sayfayi_kapat() {
+        Driver.closeDriver();
+    }
 
 
 
@@ -635,69 +697,7 @@ public class ViceDeanStepDefinition {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Samet Ozdemir
 
 
 
