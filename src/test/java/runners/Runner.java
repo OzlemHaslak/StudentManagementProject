@@ -18,7 +18,7 @@ import java.util.Date;
 
         features="src/test/resources",
         glue= {"stepDefinitions","hooks"},
-        tags= "",
+        tags= "@dean",
         dryRun= false
 )
 
