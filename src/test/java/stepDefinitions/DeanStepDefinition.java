@@ -28,6 +28,77 @@ public class DeanStepDefinition {
 
     DeanPage deanPage;
 
+    @Given("Kullanici Kayitli Username Bilgileri Ile Login Olur")
+    public void kullanici_kayitli_username_bilgileri_ile_login_olur() {
+
+    }
+    @Given("Kullanici Kayitli Password Bilgileri Ile Login Olur")
+    public void kullanici_kayitli_password_bilgileri_ile_login_olur() {
+
+    }
+    @Given("Kullanici Menu Butonuna Tiklar")
+    public void kullanici_menu_butonuna_tiklar() {
+
+    }
+    @Given("Kullanici Gelen Menuden Dean Management Menusune Tiklar")
+    public void kullanici_gelen_menuden_dean_management_menusune_tiklar() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Name Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_name_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Surname Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_surname_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Birth Place Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_birth_place_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Gender Secenegini Secer")
+    public void kullanici_add_dean_bolumunde_gender_secenegini_secer() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Date Of Birth Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_date_of_birth_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Phone Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_phone_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde SSN Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_ssn_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde User Name Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_user_name_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Password Alanini Doldurur")
+    public void kullanici_add_dean_bolumunde_password_alanini_doldurur() {
+
+    }
+    @Given("Kullanici Add Dean Bolumunde Submit Butonuna Tiklar")
+    public void kullanici_add_dean_bolumunde_submit_butonuna_tiklar() {
+
+    }
+    @Given("Kullanici Dean Ekledigine Dair Ekranda Mesaj Alir")
+    public void kullanici_dean_ekledigine_dair_ekranda_mesaj_alir() {
+
+    }
+    @Given("Kullanici Logout Secenegine Tiklayarak Cikis Yapar")
+    public void kullanici_logout_secenegine_tiklayarak_cikis_yapar() {
+
+    }
+    @Then("Kullanici driver'i kapatir")
+    public void kullanici_driver_i_kapatir() {
+
+    }
+
+
+
 
 
 
