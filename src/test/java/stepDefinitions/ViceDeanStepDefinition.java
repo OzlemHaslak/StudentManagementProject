@@ -1,10 +1,15 @@
-package pages;
+package stepDefinitions;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import pages.ViceDeanPage;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import utilities.ConfigReader;
 import utilities.Driver;
-import java.util.List;
+import utilities.ReusableMethods;
 
 
 
@@ -19,14 +24,9 @@ import java.util.List;
 
 
 
-public class RegistrationPage {
-    public RegistrationPage() {
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+public class ViceDeanStepDefinition {
 
-
-
-
+    ViceDeanPage viceDeanPage;
 
 
 
